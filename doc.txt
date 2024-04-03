@@ -1,0 +1,33 @@
+ webpack
+
+    npm i -D webpack webpack-cli
+ 
+ 
+ loaders
+    module: {
+        rules: [{
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader"],
+        }, ],
+    },
+
+    npm i -D css-loader style-loader
+
+    npm install sass-loader
+
+    sass
+    npm add -D sass-loader sass 
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+
+      plagins
+      npm i -D html-webpack-plugin
